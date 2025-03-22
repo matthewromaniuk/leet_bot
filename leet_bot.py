@@ -21,9 +21,9 @@ async def start(ctx):
     print('Starting...')
     send_link.start(ctx)
 
-@tasks.loop(seconds=3.0)
+@tasks.loop(hours=24)
 async def send_link(ctx):
-    await ctx.send("[Do the daily LeetCode challenge](https://leetcode.com/problemset/)")
+    await ctx.send("[Do the daily LeetCode challenge!](https://leetcode.com/problemset/)")
 
     
 
